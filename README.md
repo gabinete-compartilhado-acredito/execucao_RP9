@@ -7,6 +7,11 @@ Aqui nós disponibilizamos dados a respeito da execução orçamentária (e.g. e
 (RP9) destinadas a alguns órgãos selecionados (e.g. FNDE e MDR), realizadas nos anos de 2020/2021. Além disso, também
 disponibilizamos alguns dados auxiliares que foram utilizados, como a lista de prefeitos eleitos em 2020.
 
+## Reportagens que utilizaram esses dados
+
+* [Governo destinou R$ 5,7 bilhões do orçamento secreto nos últimos dias de 2021](https://oglobo.globo.com/politica/governo-destinou-57-bilhoes-do-orcamento-secreto-nos-ultimos-dias-de-2021-25347221)
+* [Distribuição de verbas gera conflitos e intrigas no Planalto e no Congresso](https://oglobo.globo.com/politica/distribuicao-de-verbas-gera-conflitos-intrigas-no-planalto-no-congresso-2-25346748)
+
 ## Tabelas disponíveis
 
 ### `dados/aux/conexao_cnpj-2019-2021_prefeitos-2020.csv`
