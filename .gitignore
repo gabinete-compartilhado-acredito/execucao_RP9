@@ -1,4 +1,6 @@
-analises/
+analises/*
+!analises/web_scraping_ptransp.ipynb
+
 .ipynb_checkpoints/
 
 dados/*
@@ -19,5 +21,7 @@ dados/brutos/ptransp/scrap_mdr/*
 dados/processados/*
 !dados/processados/empenhos_2021-12_RP9_FNDE_PTransp+Prefeitos-TSE_cleaned.csv
 !dados/processados/empenhos_2021-12_RP9_MDR_PTransp+Prefeitos-TSE_cleaned.csv
+
+
 
 !dados/aux
