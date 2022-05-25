@@ -21,5 +21,3 @@ dados/processados/*
 !dados/processados/empenhos_2021-12_RP9_MDR_PTransp+Prefeitos-TSE_cleaned.csv
 
 !dados/aux
-dados/aux/*
-!dados/aux/conexao_cnpj-2019-2021_prefeitos-2020.csv
