@@ -5,7 +5,9 @@
 
 Aqui nós disponibilizamos dados a respeito da execução orçamentária (e.g. empenhos) de emendas do Relator Geral
 (RP9) destinadas a alguns órgãos selecionados (e.g. FNDE e MDR), realizadas nos anos de 2020/2021. Além disso, também
-disponibilizamos alguns dados auxiliares que foram utilizados, como a lista de prefeitos eleitos em 2020.
+disponibilizamos alguns dados auxiliares que foram utilizados, como a lista de prefeitos eleitos em 2020 e tabelas de
+correspondências entre códigos de municípios de diferentes sistemas/órgãos, e o código de raspagem (web scraping)
+das informações orçamentárias do Portal da Transparência.
 
 ## Reportagens que utilizaram esses dados
 
@@ -53,6 +55,11 @@ Ele pode ser de uma entidade localizada no município.
 * Algumas transferências foram feitas a entidades que não possuem localização precisa na tabela de transferências,
 de maneira que qualquer informação associada ao município estará vazia.
 
+### `dados/aux/municipios_cod_ibge_tse.csv` e  `municipios_cod_siafi_ibge.csv`
+
+São tabelas que relacionam os códigos dos municípios utilizados pelo IBGE com os códigos utilizado pelo TSE
+(primeiro arquivo) e com os códigos utilizados pelo SIAFI (segundo arquivo).
+
 ### `dados/brutos/ptransp/scrap_fnde/documentos-empenho_emendas-relator_FNDE.csv`
 
 Esses dados foram obtidos da concatenação dos detalhes de todas as execuções orçamentárias apresentadas pelo
@@ -67,11 +74,21 @@ Esses dados foram obtidos da mesma maneira que os acima, mas para a [consulta](h
 
 ### `dados/processados/empenhos_2021-12_RP9_FNDE_PTransp+Prefeitos-TSE_cleaned.csv`
 
-Esse é a tabela final produzida para a execução orçamentária do FNDE em dezembro de 2021, de emendas de relator (RP 9). Ela éresultado do cruzamento de `dados/aux/conexao_cnpj-2019-2021_prefeitos-2020.csv` com `dados/brutos/ptransp/scrap_fnde/documentos-empenho_emendas-relator_FNDE.csv` através dos CNPJs dos favorecidos.
+Esse é a tabela final produzida para a execução orçamentária do FNDE em dezembro de 2021, de emendas de relator (RP 9). Ela é resultado do cruzamento de `dados/aux/conexao_cnpj-2019-2021_prefeitos-2020.csv` com `dados/brutos/ptransp/scrap_fnde/documentos-empenho_emendas-relator_FNDE.csv` através dos CNPJs dos favorecidos.
 
 ### `dados/processados/empenhos_2021-12_RP9_MDR_PTransp+Prefeitos-TSE_cleaned.csv`
 
 Esse é a tabela final produzida para a execução orçamentária do MDR em dezembro de 2021, de emendas de relator (RP 9). Ela é resultado do cruzamento de `dados/aux/conexao_cnpj-2019-2021_prefeitos-2020.csv` com `dados/brutos/ptransp/scrap_mdr/documentos-empenho_emendas-relator_MDR.csv` através dos CNPJs dos favorecidos.
+
+### `empenhos_2020-completo_RP9_FNDE_PTransp+Prefeitos-TSE.csv`
+
+Mesmo que `dados/processados/empenhos_2021-12_RP9_FNDE_PTransp+Prefeitos-TSE_cleaned.csv` mas para o ano inteiro (completo) de 2020. Esses dados foram obtidos com o notebook de web scraping
+[analises/web_scraping_ptransp.ipynb](analises/web_scraping_ptransp.ipynb).
+
+### `empenhos_2021-completo_RP9_FNDE_PTransp+Prefeitos-TSE.csv`
+
+Mesmo que `dados/processados/empenhos_2021-12_RP9_FNDE_PTransp+Prefeitos-TSE_cleaned.csv` mas para o ano inteiro (completo) de 2021. Esses dados foram obtidos com o notebook de web scraping
+[analises/web_scraping_ptransp.ipynb](analises/web_scraping_ptransp.ipynb).
 
 ## Contato
 
